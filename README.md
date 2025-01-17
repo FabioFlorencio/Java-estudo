@@ -4,7 +4,7 @@
 
 - [Java](#java)
   - [Aula 10](#aula-10)
-  	- [Variáveis Boolean](#variaveis-boolean)
+  	- [Variáveis](#variaveis)
   - [Aula 11](#aula-11)	
   	- [Curiosidade](#curiosidade)
   	- [Sequência Escape](#sequencia-escape)
@@ -16,15 +16,16 @@
 	- [🔄 Lista de Estrutura Sequencial](#lista-de-estrutura-sequencial)	
 
 ## Aula 10
-### Variaveis Boolean
+### Variaveis
 ## Aula 11
 ### Curiosidade
-### Sequencia Escape
+### Sequência Escape
 ### Variáveis Boolean
 ### Variáveis Char
 ### Variáveis Inteiras
 ### Variáveis Ponto Flutuante
 ## 🧠 Exercícios de Java ☕
-### 🔄 Lista de Estrutura Sequencial
+### 🔄 [Lista de Estrutura Sequencial](https://github.com/FabioFlorencio/Java-estudo/tree/master/src/exercicios/lista/aula13)
+
 
 
