@@ -5,9 +5,11 @@
 - [Java](#java)
   - [Aula 10](#aula-10)
   	- [Curiosidade](#curiosidade)
-  	- [Sequencia Escape](#sequencia-escape)
+  	- [Sequência Escape](#sequencia-escape)
   	- [Variaveis Boolean](#variaveis-boolean)
   - [Aula 11](#aula-11)	
+  - [🧠 Exercícios de Java ☕](#exercicios-de-java)	
+	- [🔄 Lista de Estrutura Sequencial](#lista-de-estrutura-sequencial)	
 
 ## Aula 10
 ### Curiosidade
