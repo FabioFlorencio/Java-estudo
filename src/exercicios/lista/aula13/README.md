@@ -1,4 +1,4 @@
-# 🧠 Exercícios de Java 🐍
+# 🧠 Exercícios de Java ☕
 
 ## Exercício retirado da 🏘️[comunidade python Brasil](https://wiki.python.org.br/EstruturaSequencial)
 
