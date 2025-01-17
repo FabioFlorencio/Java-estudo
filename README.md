@@ -4,18 +4,26 @@
 
 - [Java](#java)
   - [Aula 10](#aula-10)
+  	- [Variáveis Boolean](#variaveis-boolean)
+  - [Aula 11](#aula-11)	
   	- [Curiosidade](#curiosidade)
   	- [Sequência Escape](#sequencia-escape)
-  	- [Variaveis Boolean](#variaveis-boolean)
-  - [Aula 11](#aula-11)	
-  - [🧠 Exercícios de Java ☕](#exercicios-de-java)	
+  	- [Variáveis Boolean](#variaveis-boolean)  	
+  	- [Variáveis Char](#variaveis-char)  	
+  	- [Variáveis Inteiras](#variaveis-inteiras)  	
+  	- [Variáveis Ponto Flutuante](#variaveis-ponto-flutuante)  	
+  - [🧠 Exercícios de Java ☕](#aula-11)	
 	- [🔄 Lista de Estrutura Sequencial](#lista-de-estrutura-sequencial)	
 
 ## Aula 10
-### Curiosidade
-### Sequencia Escape
 ### Variaveis Boolean
 ## Aula 11
+### Curiosidade
+### Sequencia Escape
+### Variáveis Boolean
+### Variáveis Char
+### Variáveis Inteiras
+### Variáveis Ponto Flutuante
 ## 🧠 Exercícios de Java ☕
 ### 🔄 Lista de Estrutura Sequencial
 

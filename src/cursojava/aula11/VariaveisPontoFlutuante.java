@@ -1,6 +1,6 @@
 package cursojava.aula11;
 
-public class VariaveislPontoFlutuante {
+public class VariaveisPontoFlutuante {
 
 	public static void main(String[] args) {
 		
