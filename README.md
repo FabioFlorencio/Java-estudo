@@ -12,6 +12,17 @@
   	- [Variáveis Char](#variaveis-char)  	
   	- [Variáveis Inteiras](#variaveis-inteiras)  	
   	- [Variáveis Ponto Flutuante](#variaveis-ponto-flutuante)  	
+  - [Aula 12](#aula-12)	
+  	- [Leitura de Dados pelo Teclado](#Leitura-De-Dados-pelo-Teclado)
+  - [Aula 13](#aula-13)	
+  	- [Curto-Circuito](#curto-circuito)
+  	- [Operadores Aritméticos](#operadores-Aritméticos)
+  	- [Operadores Lógicos](#operadores-logicos)
+  	- [Operadores Relacionais](#operadores-relacionais)
+  - [Aula 16](#aula-16)	
+  	- [Loop While](#loop-while)
+  - [Aula 19](#aula-19)	
+  	- [Arrays](#arrays)
   - [🧠 Exercícios de Java ☕](#aula-11)	
 	- [🔄 Lista de Estrutura Sequencial](#lista-de-estrutura-sequencial)	
 
@@ -24,6 +35,18 @@
 ### Variáveis Char
 ### Variáveis Inteiras
 ### Variáveis Ponto Flutuante
+## Aula 12
+### Leitura de Dados pelo Teclado
+## Aula 13
+### Curto-Circuito
+### Operadores Aritméticos
+### Operadores Lógicos
+### Operadores Relacionais
+## Aula 16
+### Loop While
+## Aula 19
+### Arrays
+---
 ## 🧠 Exercícios de Java ☕
 ### 🔄 [Lista de Estrutura Sequencial](https://github.com/FabioFlorencio/Java-estudo/tree/master/src/exercicios/lista/aula13)
 
