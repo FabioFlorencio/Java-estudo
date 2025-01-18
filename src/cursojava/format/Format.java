@@ -5,6 +5,7 @@ public class Format {
 
 	public static void main(String[] args) {
 		
+		// Exemplo de formatação
 		// %f = ponto flutuante
 		// %d = inteiro
 		// %s = texto
