@@ -24,5 +24,7 @@ public class Exerc04 {
 		double totNotasBimestrais = (nota1 + nota2 + nota3 + nota4) / 4;
 		
 		System.out.println("Média das notas: " + totNotasBimestrais);
+		
+		scan.close();
 	}
 }

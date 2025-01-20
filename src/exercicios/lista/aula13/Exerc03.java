@@ -8,13 +8,15 @@ public class Exerc03 {
 
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Digite um número: ");
+		System.out.print("Entre com o primeiro número:");
 		int num1 = scan.nextInt();
 		
-		System.out.println("\nDigite outro número: ");		
+		System.out.print("Entre com o segundo número:");		
 		int num2 = scan.nextInt();
 		
 		System.out.println("A soma dos números é :" + (num1 + num2));
+		
+		scan.close();
 		
 	}
 }

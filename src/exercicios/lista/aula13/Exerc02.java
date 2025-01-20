@@ -12,7 +12,9 @@ public class Exerc02 {
 		System.out.print("Digite um número inteiro: ");		
 		int num1 = scan.nextInt();		
 		
-		System.out.println("O número informado é: " + num1);		
+		System.out.println("O número informado é: " + num1);
+		
+		scan.close();
 		
 	}
 }
