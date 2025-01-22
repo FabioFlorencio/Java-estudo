@@ -7,6 +7,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
   - [🎲 Tipos de dados](#-tipos-de-dados)
   - [Format](#-format)
 	  - [printf](#-printf)
+  - [🚦 Condicionais](#-Condicionais)
+	  - [if](#-if)
   - [🔒 Arrays](#-arrays)
 	  - [Sort](#-sort)
 	  - [Fill](#-fill)
@@ -19,6 +21,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 	  - [Arrays as List](#-as-list)
   - [📋 Arrays List](#-Arrays-list)
 	  - [Array LinkedList](#-Array-linkedList)
+  - [✍️ String](#-string)
+	  - [Equals Ignore Case](#-Equals-Ignore-Case)
   
   
   
@@ -47,6 +51,32 @@ public class Format {
 		System.out.println(x);
 		System.out.printf("%.2f%n", x);		
 		System.out.printf("%.4f%n", x);
+	}
+}
+
+```
+## 🚦 Condicionais
+
+### If
+
+```java
+
+import java.util.Scanner;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Entre com sua idade:");
+		int idade = scan.nextInt();
+		
+		if (idade >= 18) {
+			System.out.println("É maior de idade.");
+		} else {
+			System.out.println("Não é maior de idade.");
+		}					
 	}
 }
 
@@ -302,6 +332,68 @@ public class ArrayList {
 		
 		System.out.println("Frutas" + frutas);
 		
+	}
+}
+
+```
+## ✍️ String
+
+### Equals Ignore Case
+
+```java
+import java.util.Scanner;
+
+public class Exerc03 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Digite F-Feminino ou M-Masculino:");
+		String genero = scan.next();
+		
+		
+		// Para comparação de String, não se usa o comparador de igualdade(==)
+		// A classe String tem o seu prório método para fazer a comparação
+		
+		if (genero.equalsIgnoreCase("f")) {
+			System.out.println(genero + "-feminino");
+		} else if (genero.equalsIgnoreCase("m")) {
+			System.out.println(genero + "-masculino");	
+		} else {
+			System.out.println("Você digitou algo diferente do solicitado.");
+		}
+					
+		scan.close();
+		
+	}
+}
+
+```
+### Arrays as list contains 
+
+```java
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Exerc04 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		String[] vogais = {"a","e","i","o","u"};
+		
+		System.out.print("Digite uma vogal ou uma consoante:");
+		String busca = scan.next().toLowerCase();
+				
+		if (Arrays.asList(vogais).contains(busca)) {
+			System.out.println("Você digitou vogal!");
+		} else {
+			System.out.println("Você digitou consoante!");		
+		}					
+
+		scan.close();		
 	}
 }
 
