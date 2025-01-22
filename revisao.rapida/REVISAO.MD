@@ -370,30 +370,62 @@ public class Exerc03 {
 }
 
 ```
-### Arrays as list contains 
+## List 
+
+### ArrayList
+		
 
 ```java
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-import java.util.Arrays;
 
-public class Exerc04 {
+public class ArrayList1 {
 
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 		
-		String[] vogais = {"a","e","i","o","u"};
+		//Cria uma lista de inteiros
+		List<Integer> numeros = new ArrayList<>();
 		
-		System.out.print("Digite uma vogal ou uma consoante:");
-		String busca = scan.next().toLowerCase();
-				
-		if (Arrays.asList(vogais).contains(busca)) {
-			System.out.println("Você digitou vogal!");
-		} else {
-			System.out.println("Você digitou consoante!");		
-		}					
+		System.out.print("Digite um número:");
+		numeros.add(scan.nextInt());
+		
+		// pega o valor da posição determinada
+		System.out.println("Número digitado:" + numeros.get(0));
+		
+		scan.close();
+		
+	}
+}
 
-		scan.close();		
+```
+		
+### ArrayList com tamanho fixo
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		//Cria uma lista de inteiros
+		List<Integer> numeros = new ArrayList<>();
+		
+		System.out.print("Digite um número:");
+		numeros.add(scan.nextInt());
+		
+		// pega o valor da posição determinada
+		System.out.println("Número digitado:" + numeros.get(0));
+		
+		scan.close();
+		
 	}
 }
 

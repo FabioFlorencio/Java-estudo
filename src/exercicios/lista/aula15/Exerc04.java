@@ -13,7 +13,9 @@ public class Exerc04 {
 		
 		System.out.print("Digite uma vogal ou uma consoante:");
 		String busca = scan.next().toLowerCase();
-				
+		
+		// Arrays.asList -> transforma uma array em list
+		// conains -> metodo contains verifica o conteudo de list
 		if (Arrays.asList(vogais).contains(busca)) {
 			System.out.println("Você digitou vogal!");
 		} else {
