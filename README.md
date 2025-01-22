@@ -19,6 +19,8 @@
   	- [Operadores Aritméticos](#operadores-Aritméticos)
   	- [Operadores Lógicos](#operadores-logicos)
   	- [Operadores Relacionais](#operadores-relacionais)
+  - [Aula 14](#aula-14)	
+  	- [Condicional If else](#condicional-If-else)
   - [Aula 16](#aula-16)	
   	- [Loop While](#loop-while)
   - [Aula 19](#aula-19)	
@@ -39,6 +41,8 @@
 ### Leitura de Dados pelo Teclado
 ## Aula 13
 ### Curto-Circuito
+## Aula 14
+### Condicional If else
 ### Operadores Aritméticos
 ### Operadores Lógicos
 ### Operadores Relacionais
