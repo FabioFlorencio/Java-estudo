@@ -3,7 +3,7 @@ package exercicios.lista.aula15;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Exerc04 {
+public class Exerc04_0 {
 
 	public static void main(String[] args) {
 

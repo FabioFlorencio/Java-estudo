@@ -20,11 +20,11 @@ public class Array04 {
 		int pos2 = Arrays.binarySearch(num1,valor2);
 		
 		// O array precisa está ordenado para fazer a busca
-		// Verifica sem tem o valor no array, caso não tenha retorna um valor negativo
+		// Verifica sem tem o valor no array, e retorna a posição, caso não tenha retorna um valor negativo
 		
 		System.out.printf("%d está no array? %s - posição:%d%n", valor1, pos1 >-1 ?"Sim" :"Não", pos1);
 		System.out.printf("%d está no array? - posição: %s", valor2, pos2);
-		System.out.printf("%n%d está no array? - posição: %s", valor1, pos3);
+		System.out.printf("%n%d está no array? - posição: %s valor:%d", valor1, pos3, num4[pos3]);
 		
 	}
 }

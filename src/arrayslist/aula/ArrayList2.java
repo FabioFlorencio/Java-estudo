@@ -26,3 +26,4 @@ public class ArrayList2 {
 		scan.close();
 	}
 }
+

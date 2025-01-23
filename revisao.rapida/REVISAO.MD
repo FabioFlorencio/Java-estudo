@@ -8,7 +8,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
   - [Format](#-format)
 	  - [printf](#-printf)
   - [🚦 Condicionais](#-Condicionais)
-	  - [if](#-if)
+	  - [If](#-if)
+	  - [Ternário](#-Ternario)
   - [🔒 Arrays](#-arrays)
 	  - [Sort](#-sort)
 	  - [Fill](#-fill)
@@ -22,7 +23,10 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
   - [📋 Arrays List](#-Arrays-list)
 	  - [Array LinkedList](#-Array-linkedList)
   - [✍️ String](#-string)
-	  - [Equals Ignore Case](#-Equals-Ignore-Case)
+	  - [Equals Ignore Case](#-Equals-Ignore-Case)  
+	  - [String Builder](#-String-b	uilder)  
+  - [List](#-list)
+	  - [ArrayList com tamanho determinado](#-ArrayList-com-tamanho-determinado)
   
   
   
@@ -55,6 +59,26 @@ public class Format {
 }
 
 ```
+
+```java
+
+public class Format {
+
+	public static void main(String[] args) {
+		
+		// %f = ponto flutuante
+		// %d = inteiro
+		// %s = texto
+		// %n = quebra de linha
+		
+		String nome = "Maria";
+		int idade = 31;
+		double renda = 4000.0;
+		
+		System.out.printf("%s tem %d anos e ganha R$ %.2f reais.%n", nome, idade, renda);
+	}
+}
+```
 ## 🚦 Condicionais
 
 ### If
@@ -82,24 +106,17 @@ public class IfElse {
 
 ```
 
+### Ternário
+
 ```java
 
-public class Format {
+int numero = 5;
 
-	public static void main(String[] args) {
-		
-		// %f = ponto flutuante
-		// %d = inteiro
-		// %s = texto
-		// %n = quebra de linha
-		
-		String nome = "Maria";
-		int idade = 31;
-		double renda = 4000.0;
-		
-		System.out.printf("%s tem %d anos e ganha R$ %.2f reais.%n", nome, idade, renda);
-	}
-}
+// Operador ternário para verificar se o número é par ou ímpar
+String resultado = (numero % 2 == 0) ? "Par" : "Ímpar";
+
+System.out.println("O número " + numero + " é " + resultado);
+
 ```
 
 ## 🔒 Arrays
@@ -370,6 +387,58 @@ public class Exerc03 {
 }
 
 ```
+### String Builder
+
+Em Java, a classe StringBuilder é utilizada para criar e manipular sequências de caracteres de forma eficiente. Diferente da classe String, que é imutável (ou seja, uma vez criada, seu valor não pode ser alterado), a classe StringBuilder permite que os valores sejam modificados sem a criação de novos objetos na memória.
+
+Métodos úteis
+
+* `append`: Adiciona dados ao final da sequência.
+* `insert`: Insere dados em uma posição específica.
+* `delete`: Remove caracteres em um intervalo.
+* `replace`: Substitui parte do conteúdo por outro.
+* `reverse`: Inverte a sequência de caracteres.
+* `toString`: Converte o conteúdo de volta para um objeto `String`.
+
+```java
+        
+StringBuilder sb = new StringBuilder();
+
+sb.append("Olá");
+sb.append(" ");
+sb.append("Mundo");
+sb.append("!");
+
+// Converte o conteúdo de volta para um objeto String
+String resultado = sb.toString();
+System.out.println(resultado); // Saída: Olá Mundo!
+    
+```
+
+```java
+        
+StringBuilder sb = new StringBuilder("Olá");
+        
+// Adicionando texto
+sb.append(", Mundo!");
+System.out.println(sb); // Saída: Olá, Mundo!
+
+// Inserindo texto
+sb.insert(4, " querido");
+System.out.println(sb); // Saída: Olá querido, Mundo!
+
+// Substituindo texto
+sb.replace(4, 12, "caro");
+System.out.println(sb); // Saída: Olá caro, Mundo!
+
+// Removendo texto
+sb.delete(4, 9);
+System.out.println(sb); // Saída: Olá, Mundo!
+
+// Revertendo texto
+sb.reverse();
+System.out.println(sb); // Saída: !odnuM ,álO
+```
 ## List 
 
 ### ArrayList
@@ -402,30 +471,33 @@ public class ArrayList1 {
 
 ```
 		
-### ArrayList com tamanho fixo
+### ArrayList com tamanho determinado
 
 ```java
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
-public class ArrayList1 {
+public class ArrayList2 {
 
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 		
-		//Cria uma lista de inteiros
-		List<Integer> numeros = new ArrayList<>();
+		// Cria uma lista com espaço reservado de 10 posições, mas não adiciona elementos
+		// Metodo length não funciona em list
 		
-		System.out.print("Digite um número:");
-		numeros.add(scan.nextInt());
+		List<Integer> numeros = new ArrayList<>(10);
+		int tamanho = 10;
 		
-		// pega o valor da posição determinada
-		System.out.println("Número digitado:" + numeros.get(0));
+		for (int i = 0; i < tamanho; i++) {
+			System.out.print("Digite o " + (i+1) + "° número:");
+			numeros.add(scan.nextInt());
+		}
+		
+		System.out.println("\n" + numeros);
 		
 		scan.close();
-		
 	}
 }
 
