@@ -22,6 +22,6 @@ public class ArrayList {
 		frutas.add(1, "Jaca");
 		
 		System.out.println("Frutas" + frutas);
-		
+				
 	}
 }

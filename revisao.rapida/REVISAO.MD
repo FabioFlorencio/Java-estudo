@@ -5,6 +5,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 
 - [📋 Tabela de revisão rápida ⚡](#-tabela-de-revisão-rápida-)
   - [🎲 Tipos de dados](#-tipos-de-dados)
+  - [π Constantes](#-Constantes)
+  	- [Constantes Simples](#-Constantes-simples)
   - [Format](#-format)
 	  - [printf](#-printf)
   - [🚦 Condicionais](#-Condicionais)
@@ -24,7 +26,7 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 	  - [Array LinkedList](#-Array-linkedList)
   - [✍️ String](#-string)
 	  - [Equals Ignore Case](#-Equals-Ignore-Case)  
-	  - [String Builder](#-String-b	uilder)  
+	  - [String Builder](#-String-builder)  
   - [List](#-list)
 	  - [ArrayList com tamanho determinado](#-ArrayList-com-tamanho-determinado)
   
@@ -33,6 +35,17 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 # Tabela de revisão rápida
   
 ## 🎲 Tipos de dados
+  
+## π Constantes 
+###  Constantes Simples
+
+```java
+final double PI = 3.14159; // Constante para o valor de PI
+final int MAX_TENTATIVAS = 5; // Constante para número máximo de tentativas
+
+System.out.println("Valor de PI: " + PI);
+System.out.println("Máximo de tentativas permitidas: " + MAX_TENTATIVAS);
+```
   
 ## Format
 
