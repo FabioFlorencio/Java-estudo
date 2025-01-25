@@ -17,7 +17,8 @@ public class Exerc04_1 {
 		for (String v: vogais) {
 			if (v.equals(letra)) {
 				System.out.println("Você digitou uma vogal!");
-				valida = false;				
+				valida = false;
+				break;
 			}			
 		}
 		
