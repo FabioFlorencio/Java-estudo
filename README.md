@@ -25,6 +25,8 @@
   	- [Loop While](#loop-while)
   - [Aula 19](#aula-19)	
   	- [Arrays](#arrays)
+  - [Aula 47](#aula-47)	
+  	- [Exceção](#Exceção)
   - [🧠 Exercícios de Java ☕](#aula-11)	
 	- [🔄 Lista de Estrutura Sequencial](#lista-de-estrutura-sequencial)	
 
@@ -50,6 +52,8 @@
 ### Loop While
 ## Aula 19
 ### Arrays
+## Aula 47
+### Exceção
 ---
 ## 🧠 Exercícios de Java ☕
 ### 🔄 [Lista de Estrutura Sequencial](https://github.com/FabioFlorencio/Java-estudo/tree/master/src/exercicios/lista/aula13)
