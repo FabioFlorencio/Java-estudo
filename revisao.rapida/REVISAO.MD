@@ -29,6 +29,9 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 	  - [String Builder](#-String-builder)  
   - [List](#-list)
 	  - [ArrayList com tamanho determinado](#-ArrayList-com-tamanho-determinado)
+  - [Try](#-try)
+	  - [Múltiplos Catch](#-Multiplos-Catch)
+	  - [Múltiplos Catch Genérico](#-Múltiplos-Catch-Genérico)
   
   
   
@@ -396,29 +399,41 @@ scan.close();
 		
 
 ```
+
+## List
 		
-### ArrayList com tamanho determinado
+### Múltiplos Catch
 
 ```java
-import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
-
-Scanner scan = new Scanner(System.in);
-
-// Cria uma lista com espaço reservado de 10 posições, mas não adiciona elementos
-// Metodo length não funciona em list
-
-List<Integer> numeros = new ArrayList<>(10);
-int tamanho = 10;
-
-for (int i = 0; i < tamanho; i++) {
-	System.out.print("Digite o " + (i+1) + "° número:");
-	numeros.add(scan.nextInt());
+int[] numeros = {4,8,16,32,64,128};
+int[] demon = {2,0,4,8,0};
+				
+for (int i = 0; i < numeros.length;  i++) {
+	try {
+		System.out.println(numeros[i] + "/" + demon[i] + " = " + (numeros[i] / demon[i]));
+	} catch (ArithmeticException e1) {
+		System.out.println("Erro ao dividir por zero.");
+	} catch (ArrayIndexOutOfBoundsException e2) {
+		System.out.println("Posição do array inválida.");
+	}
 }
+```
 
-System.out.println("\n" + numeros);
+### Múltiplos Catch Genérico
 
-scan.close();
-
+```java
+int[] numeros = {4,8,16,32,64,128};
+int[] demon = {2,0,4,8,0};
+				
+for (int i = 0; i < numeros.length;  i++) {
+	try {
+		System.out.println(numeros[i] + "/" + demon[i] + " = " + (numeros[i] / demon[i]));
+	} catch (ArithmeticException e1) {
+		System.out.println("Erro ao dividir por zero.");
+	} catch (Throwable e2) {
+	// Throwable é uma super classe de exceção
+	// sempre as classes de exceção específicas primeiro e depois as classes genéricas
+		System.out.println("Ocorreu um erro.");
+	}
+}	
 ```
