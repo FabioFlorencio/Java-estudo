@@ -27,6 +27,10 @@
   	- [Arrays](#arrays)
   - [Aula 47](#aula-47)	
   	- [Exceção](#Exceção)
+  - [Aula 48](#aula-48)	
+  	- [Múltiplos Catch](#Multiplos-Catch)
+  - [Aula 49](#aula-49)	
+  	- [Finally](#Finally)
   - [🧠 Exercícios de Java ☕](#aula-11)	
 	- [🔄 Lista de Estrutura Sequencial](#lista-de-estrutura-sequencial)	
 
@@ -54,6 +58,10 @@
 ### Arrays
 ## Aula 47
 ### Exceção
+## Aula 48
+### Múltiplos Catch
+## Aula 49
+### Finally
 ---
 ## 🧠 Exercícios de Java ☕
 ### 🔄 [Lista de Estrutura Sequencial](https://github.com/FabioFlorencio/Java-estudo/tree/master/src/exercicios/lista/aula13)

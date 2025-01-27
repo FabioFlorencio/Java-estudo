@@ -29,9 +29,10 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 	  - [String Builder](#-String-builder)  
   - [List](#-list)
 	  - [ArrayList com tamanho determinado](#-ArrayList-com-tamanho-determinado)
-  - [Try](#-try)
+  - [🛡️ Try](#-try)
 	  - [Múltiplos Catch](#-Multiplos-Catch)
 	  - [Múltiplos Catch Genérico](#-Múltiplos-Catch-Genérico)
+	  - [Finally](#-Finally)
   
   
   
@@ -400,7 +401,7 @@ scan.close();
 
 ```
 
-## List
+## Try
 		
 ### Múltiplos Catch
 
@@ -436,4 +437,22 @@ for (int i = 0; i < numeros.length;  i++) {
 		System.out.println("Ocorreu um erro.");
 	}
 }	
+```
+### Finally
+
+```java
+int[] numeros ={4,8,16,32,64,128};
+int[] demon = {2,0,4,8,0};
+
+
+for (int i = 0; i < numeros.length; i++) {			
+	try {
+		System.out.println(numeros[i] + "/" + " = " + (numeros[i]/ demon[i]));
+	} catch (ArithmeticException e) {
+		System.out.println("Erro ao dividir por zero.");
+	} catch (ArrayIndexOutOfBoundsException e2) {
+		System.out.println("Posição do array inválida.");
+	} finally {
+		System.out.println("Essa linha é impressa sempre após o try ou catch.");
+	}
 ```
