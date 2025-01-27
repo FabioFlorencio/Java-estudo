@@ -33,6 +33,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 	  - [Múltiplos Catch](#-Multiplos-Catch)
 	  - [Múltiplos Catch Genérico](#-Múltiplos-Catch-Genérico)
 	  - [Finally](#-Finally)
+  - [🛠️ Método](#-Método)
+	  - [Método simples](#-Multiplos-Catch)
   
   
   
@@ -455,4 +457,45 @@ for (int i = 0; i < numeros.length; i++) {
 	} finally {
 		System.out.println("Essa linha é impressa sempre após o try ou catch.");
 	}
+```
+## 🛠️ Método
+### Método sem retorno 
+
+```java
+public static void main(String[] args) {		
+	imprimir();				
+}
+// Exemplos de parâmetros de entrada
+public static void imprimir("Aprendendo a linguagem Java.") {
+	System.out.println();
+}
+```
+### Método com retorno
+
+```java
+public static void main(String[] args) {
+		
+	Scanner scan = new Scanner(System.in);
+	
+	String msgPadrao = "Informe o valor da";
+	String[] perguntas = {" base:", " altura:"};
+			
+	List<Double> valores = new ArrayList<>();
+	
+	for (String pergunta : perguntas) {
+		System.out.print(msgPadrao + pergunta);
+		double valor = scan.nextDouble();
+		valores.add(valor);			
+	}
+	
+	double resp = retangulo(valores);
+	System.out.println(resp);
+	
+	scan.close();				
+}
+// passando list como parâmetro par função
+public static double retangulo(List<Double> valores) {
+			
+	return valores.get(0) * valores.get(1);					
+}
 ```
