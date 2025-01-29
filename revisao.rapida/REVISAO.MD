@@ -24,6 +24,10 @@ Aqui está uma tabela de revisão sobre as principais sintaxes em Java.
 	  - [Arrays as List](#-as-list)
   - [📋 Arrays List](#-Arrays-list)
 	  - [Array LinkedList](#-Array-linkedList)
+	  - [Converte list em array](#-Converte-list-em-array)
+  - [🧮 Operações matemáticas](#-operações-matemáticas)	 
+	  - [Max](#-Max)   
+	  - [Min](#-Min)   
   - [✍️ String](#-string)
 	  - [Equals Ignore Case](#-Equals-Ignore-Case)  
 	  - [String Builder](#-String-builder)  
@@ -297,6 +301,48 @@ frutas.add(1, "Jaca");
 System.out.println("Frutas" + frutas);
 		
 ```
+## 📋 Operações matemáticas
+
+### Max
+```java
+Scanner scanner = new Scanner(System.in);
+        
+// Lendo os três números
+System.out.print("Digite o primeiro número: ");
+int num1 = scanner.nextInt();
+
+System.out.print("Digite o segundo número: ");
+int num2 = scanner.nextInt();
+
+// Determinando o maior número
+int maior = Math.max(num1, num2);
+
+System.out.println("O maior número é: " + maior);
+        
+```
+
+### Min
+
+```java
+Scanner scanner = new Scanner(System.in);
+        
+// Lendo os três números
+System.out.print("Digite o primeiro número: ");
+int num1 = scanner.nextInt();
+
+System.out.print("Digite o segundo número: ");
+int num2 = scanner.nextInt();
+
+System.out.print("Digite o terceiro número: ");
+int num3 = scanner.nextInt();
+
+// Determinando o menor número
+int maior = Math.min(num1, Math.min(num2, num3));
+
+System.out.println("O menor número é: " + menor);
+        
+```
+
 ## ✍️ String
 
 ### Equals Ignore Case
@@ -400,7 +446,28 @@ System.out.println("Número digitado:" + numeros.get(0));
 
 scan.close();
 		
+```
 
+### Converte list em array
+
+```java
+
+import java.util.ArrayList;
+import java.util.List;
+
+List<Integer> lista = new ArrayList<>();
+
+lista.add(1);
+lista.add(2);
+lista.add(3);
+
+// Convertendo List para Array
+Integer[] array = lista.toArray(new Integer[0]);
+
+// Imprimindo o array
+for (Integer item : array) {
+    System.out.println(item);
+}
 ```
 
 ## Try
