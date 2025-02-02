@@ -25,6 +25,8 @@
   	- [Loop While](#loop-while)
   - [Aula 19](#aula-19)	
   	- [Arrays](#arrays)
+  - [Aula 24](#aula-24)	
+  	- [Orientação a Objetos](#Orientaçao-a-Objetos)
   - [Aula 47](#aula-47)	
   	- [Exceção](#Exceção)
   - [Aula 48](#aula-48)	
@@ -56,6 +58,8 @@
 ### Loop While
 ## Aula 19
 ### Arrays
+## Aula 24
+### Orientação a Objetos
 ## Aula 47
 ### Exceção
 ## Aula 48

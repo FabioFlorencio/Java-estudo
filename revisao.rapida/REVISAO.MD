@@ -533,8 +533,8 @@ public static void main(String[] args) {
 	imprimir();				
 }
 // Exemplos de parâmetros de entrada
-public static void imprimir("Aprendendo a linguagem Java.") {
-	System.out.println();
+public static void imprimir() {
+	System.out.println("Aprendendo a linguagem Java.");
 }
 ```
 ### Método com retorno
